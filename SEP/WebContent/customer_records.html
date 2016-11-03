@@ -1,0 +1,169 @@
+
+<html>
+<head>
+<style>
+.center {
+    margin: auto;
+    width: 60%;
+    border:3px solid #8AC007;
+    padding: 10px;
+}
+
+body {
+    background-color: #d8da3d;
+      color:purple;
+}
+
+h1 {
+    color: purple;
+    text-align: center;
+}
+
+p {
+    font-family: "Times New Roman";
+    font-size: 20px;
+}
+fieldset { 
+    display: block;
+    margin-left: 2pxsolid #000000;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove (internal value);
+}
+</style>
+</head>
+<body >
+<nav id="main-nav">
+<div class="center">
+
+<form action="CustRecordServlet" method="get" onsubmit="return (  
+
+validateNumber(this.number, 'Please enter a phone   
+
+        number, numbers only', 5, 10) &&  
+
+validateString(this.cname, 'Please   
+
+        enter your first name', 3, 15) &&  
+
+        validateEmail(this.email, 'Please enter your email address');">
+
+  
+<h1><span>Customer Records </span></h1></legend>
+<table>
+<font style="4">
+  <tr><td>CustomerName<td><input type="text" name ="cname" id="cname"><br>
+  
+     <tr><td>Phone number :<td><input type="number" name="number" id="number"><br> 
+  <tr><td>Address :<td><input type="address" name="address" id="add"><br>
+  <tr><td>Date <td><input type="date" name="date" id="date"><br>
+  <tr><td>Event<td><input type="text" name="event" id="event"><br>
+   <tr><td>Budget<td><input type="number" name="number1" id="bud"><br> 
+   <tr><td>EmailId<td><input type="email" name="email" id="email"><br> 
+
+<br>
+ 
+<br>
+<tr><td> Description  :<td><textarea rows="4" cols="50" align="center"></textarea><br>
+  
+</font>
+     
+  </table>
+  
+ 
+
+  <input type="submit" value="Submit" id="fj">
+  <script language ="javascript">
+       function validateEmail(email, msg, optional) {  
+
+							if (!email.value && optional) {  
+
+												return true;  
+
+														}  
+										var re_mail = /^([a-zA-Z0-9_.-])+@(([a-zA-Z0-9-])+.)+  
+
+        															([a-zA-Z])+$/;  
+
+										if (!re_mail.test(email.value)) {  
+
+										alert(msg);  
+
+										email.focus();  
+
+										email.select();  
+
+									return false;  
+
+								}  
+
+  									return true;  
+
+							}
+
+       function validateString(field, msg, min, max) {  
+
+    	   if (!min) { min = 1 }  
+
+    	   if (!max) { max = 65535 }  
+
+    	     
+
+    	   if (!field.value || field.value.length < min ||   
+
+    	   field.value.max > max) {  
+
+    	   alert(msg);  
+
+    	   field.focus();  
+
+    	   field.select();  
+
+    	   return false;  
+
+    	   }  
+
+    	     
+
+    	   return true;  
+
+    	   }
+       function validateNumber(field, msg, min, max) {  
+
+    	   if (!min) { min = 0 }  
+
+    	   if (!max) { max = 255 }  
+
+    	     
+
+    	   if ( (parseInt(field.value) != field.value) ||   
+
+    	           field.value.length < min || field.value.length > max) {  
+
+    	   alert(msg);  
+
+    	   field.focus();  
+
+    	   field.select();  
+
+    	   return false;  
+
+    	   }  
+
+    	     
+
+    	   return true;  
+
+    	   }
+       </script>
+  
+  
+</nav>
+</div>
+
+</body>
+
+</html>

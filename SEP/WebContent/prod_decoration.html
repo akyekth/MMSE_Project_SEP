@@ -1,0 +1,81 @@
+
+<html>
+<head>
+<style>
+.center {
+    margin: auto;
+    width: 60%;
+    border:3px solid #8AC007;
+    padding: 10px;
+}
+
+body {
+    background-color: #d8da3d;
+      color:purple;
+}
+
+h1 {
+    color: purple;
+    text-align: center;
+}
+
+p {
+    font-family: "Times New Roman";
+    font-size: 20px;
+}
+fieldset { 
+    display: block;
+    margin-left: 2pxsolid #000000;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove (internal value);
+}
+</style>
+</head>
+<body >
+<nav id="main-nav">
+<div class="center">
+
+<form action="servlet2" method="get">
+
+  
+<h1><span>Production Department Allocation Tasks </span></h1></legend>
+<table>
+<font style="4">
+  <tr><td>Project references:<td><input type="text" name ="cnum"><br>
+ 
+  <tr><td>Assign to  :<td><select name="name">
+                            <option value="Magy">Magy</option>
+<option value="Angelina">Angelina</option>
+<option value="Don">Don</option>
+<option value="Tom">Tom</option>
+</select>
+<br>
+ <tr><td> Priority :<td><select name="name1">
+                            <option value="High">High</option>
+<option value="Medium">Medium</option>
+<option value="Low">Low</option>
+</select>
+<br>
+<tr><td> Description  :<td><textarea rows="4" cols="50" align="center"></textarea><br>
+  
+</font>
+     
+  </table>
+  
+ 
+
+  <a href="tasksuccess.html">SendTask</a>
+
+ 
+  
+  
+</nav>
+</div>
+
+</body>
+
+</html>

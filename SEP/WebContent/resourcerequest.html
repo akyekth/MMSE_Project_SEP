@@ -1,0 +1,95 @@
+
+<html>
+<head>
+<style>
+body {
+    background-color: #d8da3d;
+    font-color:purple
+}
+label{
+display:inline-block;
+width:200px;
+margin-right:30px;
+text-alig"WebContent/resourcerequest.html"n:right;
+}
+
+.center {
+    margin: auto;
+    width: 60%;
+    border:3px solid #8AC007;
+    padding: 10px;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+p {
+    font-family: "Times New Roman";
+    font-size: 20px;
+    
+    
+}
+fieldset { 
+    display: block;
+    margin-left: 2px solid #000000;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove (internal value);
+}
+</style>
+</head>
+<body>
+<nav id="main-nav">
+<div class="center">
+
+<P>
+
+<form action="ResourceRecruitmentServlet" method="get">
+<h1><span>Recruitment Request </span></h1></legend>
+ 
+  <font size="4"> Contract type</font> <br>
+ <table>
+  <tr><td>
+   <label for="fulltime">Full Time</label>
+  <td><input type="radio" name="jobtype" id="fulltime" value="fulltime">
+ 
+  <tr><td><label for="parttime">Part time</label>
+  <td><input type="radio" name="jobtype" id="parttime" value="parttime"><br>
+ </table>
+ <font size="4"> Requesting department</font><br>
+   <ul> 
+  <table>
+  <tr><td>  
+ <label for="admin">Administration</label>
+<input type="radio" name="department" id="admin" value="admin">
+  <td><label for="finance">Financial</label>
+  <input type="radio" name="depatment" id="finance" value="finance"><br>
+  <tr><td><label for="production">Production</label>&nbsp
+  <input type="radio" name="department" id="production" value="production">
+  <td><label for="service">Service</label>
+  <input type="radio" name="depatment" id="service" value="service"><br>
+  </table>
+ </ul>
+<table>
+<font size="4">
+ <tr><td> Years Of Experience<td><input type="text" name="exp"><br><br>
+  <tr><td>JobTitle<td><input type="text" name="title"><br><br>
+  <tr><td>JobDescription <td>
+   <textarea rows="4" cols="50" align="center">
+                 </textarea><br>
+  </table>
+    </font>
+ <br> <input type="submit" value="Submit" >
+
+  
+  
+
+</nav>
+</div>
+</body>
+</html>

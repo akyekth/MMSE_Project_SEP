@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+.center {
+    margin: auto;
+    width: 60%;
+    border:3px solid #8AC007;
+    padding: 10px;
+    
+}
+
+body {
+    
+    color: purple;
+  background-color: #d8da3d ;
+}
+
+h1 {
+    color: purple;
+    text-align: center;
+}
+
+p {
+    font-family: "Times New Roman";
+    font-size: 20px;
+}
+fieldset { 
+    display: block;
+    margin-left: 2pxsolid #000000;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove (internal value);
+}
+</style>
+</head>
+<body>
+<nav id="main-nav">
+<div class="center">
+
+<form action="FinancialrequestServlet" method="get">
+<fieldset>
+  <legend>
+<h1><span>Financial Request </span></h1></legend>
+<font size="4"> Requesting department</font><br>
+   <ul> 
+  <table>
+  <tr><td>
+<input type="radio" name="department" id="admin" value="admin">  
+ <label for="admin">Administration</label>
+
+  <td><input type="radio" name="admin" id="finance" value="finance"><label for="finance">Financial</label>
+  <br>
+  <tr><td><input type="radio" name="admin" id="production" value="production"><label for="production">Production</label>&nbsp
+  
+  <td><input type="radio" name="admin" id="service" value="service"><label for="service">Service</label>
+  <br>
+  </table>
+ </ul>
+<table>
+
+
+<table>
+
+
+  <tr><td>Project Preferences<td><input type="text" name ="ppref"><br>
+ <tr><td> Requiredamount <td><input type="text" name ="balamt"><br>
+  <tr><td>Reason<td><textarea rows="3" cols="20" align="center" name="reas">
+                 </textarea><br>
+ 
+  </table>
+  
+ 
+</div>
+</nav>
+</body>
+<div class="center">
+<footer>
+      <input type="submit" onclick="alert('Successfully created !')" value="Confirm">
+</footer>
+</div>
+</html>

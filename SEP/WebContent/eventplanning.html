@@ -1,0 +1,89 @@
+
+<html>
+<head>
+<style>
+.center {
+    margin: auto;
+    width: 60%;
+    border:3px solid #8AC007;
+    padding: 10px;
+}
+
+body {
+    background-color: #d8da3d;
+}
+
+h1 {
+    color: purple;
+    text-align: center;
+}
+
+p {
+    font-family: "Times New Roman";
+    font-size: 20px;
+}
+fieldset { 
+    display: block;
+    margin-left: 2pxsolid #000000;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove (internal value);
+}
+</style>
+</head>
+<body >
+<nav id="main-nav">
+<div class="center">
+
+<form action="EventServlet" method="get">
+
+  
+<h1><span>Request For Event Planning </span></h1></legend>
+<table>
+<font style="4">
+  <tr><td>Record Number:<td><input type="text" name ="cunum"><br>
+ <tr><td> Clientname   :<td><input type="text" name ="cname"><br>
+  <tr><td>Event Type   :<td><input type="text" name ="etype"><br>
+ <tr><td> Expected numberof attendies :<td><input type="text" name ="attendies"><br>
+  <tr><td>Event Organizing days : <td><input type="text" name ="days"><br>
+  <tr><td>Date of Event : 
+</font>
+     <tr><td>From <input type="date" name ="fdate"><br>
+                  <td>To   <input type="date" name ="tdate"><br>
+  </table>
+  
+ <fieldset>
+  <legend><font style="6">Preferences</font></legend>
+<table>
+
+  <tr><td>
+      Decoration <td><input type="checkbox" name ="cnum">
+     <td> Breakfast<td>  <input type="checkbox" name ="cnum"><br>
+  
+  <td> Lunch <td> <input type="checkbox" name ="cnum">
+      <tr><td>Dinner <td> <input type="checkbox" name ="cnum"><br>
+     
+  <td>Soft Drinks<td><input type="checkbox" name ="cnum">
+     <td> Fruit salad<td><input type="checkbox" name ="cnum"><br>
+     
+</table>
+      
+     </fieldset> 
+     <table>
+   <tr><td> Expected budjet :<td><input type="text" name ="budjet"><br>
+   <tr><td> Feedback :<td><input type="text" name ="feed"><br>
+    
+
+ <tr><td> <input type="submit" value="submit">
+  
+  </table>
+  
+</nav>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+  <title>SEP-SwedishEventPlanner</title>
+<style>
+   body {
+  padding-left: 10em;
+   padding-top:10em;  
+  font-family: Georgia, "Times New Roman",
+        Times, serif;
+  color: purple;
+  background-color: #d8da3d }
+ul.navbar {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 25em;
+  left: 25em;
+  width: 12em }
+  ul.navbar1 {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 25em;
+  left: 45em;
+  width: 12em }
+h1 {
+  font-family: Helvetica, Geneva, Arial,
+        SunSans-Regular, sans-serif }
+ul.navbar li {
+  background: white;
+  margin: 0.5em 0;
+  padding: 0.3em;
+  border-right: 1em solid black }
+ul.navbar a {
+  text-decoration: none }
+a:link {
+  color: blue }
+
+a:visited {
+  color: purple }
+label  {color: purple }
+address {
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: thin dotted }
+</style>
+</head>
+
+<body>
+<h1>
+
+Welcome to my Sweden EventPlaning Organizer!</h1>
+
+<p>HI Here  we are organize events
+<p>this is the main page of Swedish event Organizer.
+
+<!-- Sign and date the page, it's only polite! -->
+<ul class="navbar">
+<form  action="LoginClass" method="get" >
+ <h3>Management Team Login</h3>
+    <label>User name</label>
+    <input type="text" name="usr" id="usr">
+   
+    <label>Password</label>
+    <input type="password" name="pwd" id="pwd" >
+    
+    <input type="submit"  value="Login" id="fj"/>
+</form>
+</ul>
+<ul class="navbar1">
+<form  action="LoginServlet2" method="get">
+ <h3>Sub Team Login</h3>
+    <label>User name</label>
+    <input type="text" name="usr1" > 
+   
+
+        <label>Password</label>
+    <input type="password" name="pwd1" >
+    
+
+
+    <input type="submit"  value="Login" >
+</form>
+</ul>
+<!-- Site navigation menu -->
+<script  type="text/javascript">
+function myfunction()
+{
+	if(document.getElementById("usr")=="")
+		{
+		alert( "Please enter your username." );
+		 document.form.pwd.focus();
+		    return false;
+		}
+      return true;
+	}
+function checkform ( form )
+{
+  // see http://www.thesitewizard.com/archive/validation.shtml
+  // for an explanation of this script and how to use it on your
+  // own website
+
+  // ** START **
+  if (document.form.name.value == "") {
+    alert( "Please enter your username." );
+    form.name.focus();
+    
+     if(document.form.name.pwd=="")
+	  {
+	  alert( "Please enter your password." );
+	    form.pwd.focus();
+	    return false;
+	  }
+  }
+  // ** END **
+  return true ;
+}
+//-->
+</script>
+
+</body>
+</html>

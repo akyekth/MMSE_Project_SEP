@@ -1,0 +1,97 @@
+
+<html>
+<head>
+<style>
+.center {
+    margin: auto;
+    width: 60%;
+    border:3px solid #8AC007;
+    padding: 10px;
+}
+
+body {
+    background-color: #d8da3d;
+    font-color:purple;
+}
+
+h1 {
+    color: purple;
+    text-align: center;
+}
+
+p {
+    font-family: "Times New Roman";
+    font-size: 20px;
+}
+fieldset { 
+    display: block;
+    margin-left: 2pxsolid #000000;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove (internal value);
+}
+</style>
+</head>
+<body>
+<nav id="main-nav">
+<div class="center">
+
+<form action="servlet2" method="get">
+<fieldset>
+  <legend>
+<h1><span>Client Request Details </span></h1></legend>
+<table>
+
+  <tr><td>Client record number:<td><input type="text" name ="cnum"><br>
+ <tr><td> Client name   :<td><input type="text" name ="cnum"><br>
+  <tr><td>Event Type   :<td><input type="text" name ="cnum"><br>
+ <td> Expected numberof attendies :<td><input type="number" name ="cnum"><br>
+  <tr><td>Event Organizing days : <td><input type="number" name ="cnum"><br>
+  <tr><td> From <td><input type="date" name ="cnum"><br>
+                  <td>To <td>  <input type="date" name ="cnum"><br>
+     <tr><td> Description <td><input type="text" name ="cnum"><br>
+   <tr><td>planned budjet <td><input type="number" name ="cnum"><br>
+  </table>
+  
+ <fieldset>
+<table>
+  
+
+
+  <tr><td>
+      Decoration <td><textarea rows="3" cols="20" align="center">
+                 </textarea><br>
+     <td>Filming/photos <td> <textarea rows="3" cols="20" align="center">
+                 </textarea><br>
+  
+  <tr><td>Posters/Art work<td> <textarea rows="3" cols="20" align="center">
+                 </textarea><br>
+      <td>music <td> <textarea rows="3" cols="20" align="center">
+                 </textarea><br>
+
+     
+  <tr><td>Computer Related Issues<td><input type="checkbox" name ="cnum">
+     <td> Food and Drinks<td><input type="checkbox" name ="cnum"><br>
+</table>
+      
+     </fieldset> 
+
+   Other needs  <textarea rows="3" cols="10" align="center">
+                 </textarea><br>
+   
+  
+  
+</fieldset>
+</div>
+</nav>
+</body>
+<div class="center">
+<footer>
+      <input type="button" onclick="alert('Successfully created !')" value="Confirm">
+      
+</footer>
+</div>
+</html>
